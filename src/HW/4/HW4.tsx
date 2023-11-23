@@ -38,11 +38,12 @@ export const HW4 = () => {
 
       <ol id={"hw04-tasks"}>
         {texts.map((el, index) => {
+          console.log(index % 2 !== 0 ? "white" : "black");
           return (
             <li
               key={index}
               id={`hw04-task-${index}`}
-              className={index % 2 ? s.chetNechet : ""}
+              className={index % 2 ? "" : s.chetNechet}
             >
               {el}
             </li>

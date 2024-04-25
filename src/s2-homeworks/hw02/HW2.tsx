@@ -60,10 +60,10 @@ export const deleteAffair = (
   _id: number,
 ): AffairType[] => {
   // need to fix any
-  console.log(
-    "deleteAffair",
-    affairs.filter((el) => el._id !== _id),
-  );
+  // console.log(
+  //   "deleteAffair",
+  //   affairs.filter((el) => el._id !== _id),
+  // );
   return affairs.filter((el) => el._id !== _id); // need to fix
 };
 
@@ -77,7 +77,7 @@ function HW2() {
     // need to fix any
     // need to fix
     // setAffairs(affairs.filter((el) => el._id !== _id));
-    console.log("deleteAffairCallback", _id, affairs);
+    // console.log("deleteAffairCallback", _id, affairs);
     setAffairs(deleteAffair(affairs, _id));
   };
 

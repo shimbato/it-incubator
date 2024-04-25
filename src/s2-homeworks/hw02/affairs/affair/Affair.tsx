@@ -11,7 +11,7 @@ type AffairPropsType = {
 
 function Affair(props: AffairPropsType) {
   const deleteCallback = () => {
-    console.log("del", props.affair._id);
+    // console.log("del", props.affair._id);
     props.deleteAffairCallback(props.affair._id);
     // need to fix
   };

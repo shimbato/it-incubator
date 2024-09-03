@@ -1,22 +1,30 @@
 .sidebar {
     width: 300px;
     background-color: white;
-      position: absolute;
-    z-index: 1;
+    position: fixed;
+    z-index: 20;
     height: 100%;
+    transition: 0.2s ease-in;
 
-   
+
+
 }
 
 .sidebar.open {
-visibility: hidden;
-transform: rotate(45deg);
+    /* visibility: hidden; */
+    position: fixed;
+    transition: 0.2s ease-out;
+    left: 0;
+    box-shadow: 0 10px 40px rgba(29, 33, 38, 0.13),
+        0 1px 2px rgba(29, 33, 38, 0.1);
+    /* transform: rotate(45deg); */
 
 }
 
 .background {
     background-color: red;
     opacity: 0.6;
+    z-index: 10;
 }
 
 .nav {
@@ -30,37 +38,34 @@ transform: rotate(45deg);
 }
 
 .nav a {
-    text-decoration: none;
     color: black;
-}
-.nav a:first-child {
-    text-decoration: underline;
-    color: rgba(0, 89, 178, 1);
-
+    text-decoration: none;
 }
 
 .nav a:hover {
-    color: rgba(88, 172, 255, 1);
+    color: #0080ff;
 }
 
 .nav a.active {
-    /* text-decoration: underline; */
-    /* color: rgba(0, 89, 178, 1); */
-    color: rgba(61, 107, 153, 1);
+    color: #0059b2;
+    text-decoration: underline;
 }
 
 
 .close {
     position: absolute;
-    left: 260px;
-    top: 10px;
+    height: 24px;
+    width: 24px;
+    right: 24px;
+    top: 16px;
+
+    background-color: transparent;
     border: none;
-    padding: 0;
-    margin: 0;
-    background: inherit;
-    transform: rotate(0);
+    cursor: pointer;
 
 }
 
 .close img {
+    height: 24px;
+    width: 24px;
 }

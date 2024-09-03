@@ -1,7 +1,15 @@
 .input:focus {
+    border: 1px solid rgba(209, 209, 209, 1);
+    width: 372px;
+    height: 36px;
 }
 
 .input {
+    border: 1px solid rgba(209, 209, 209, 1);
+    width: 372px;
+    height: 36px;
+    background-color: aqua;
+
 }
 
 .inputWrapper {
@@ -11,10 +19,12 @@
 }
 
 .errorInput {
+border-color: rgba(204, 20, 57, 1);
 }
 
 .errorInput:focus {
 }
 
 .error {
+    color: rgba(204, 20, 57, 1);
 }

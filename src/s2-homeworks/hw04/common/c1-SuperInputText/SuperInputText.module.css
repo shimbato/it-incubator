@@ -8,23 +8,30 @@
     border: 1px solid rgba(209, 209, 209, 1);
     width: 372px;
     height: 36px;
-    background-color: aqua;
 
 }
 
-.inputWrapper {
-}
+.inputWrapper {}
 
 .superInput {
+    display: flex;
+    flex-direction: column-reverse;
 }
 
+
 .errorInput {
-border-color: rgba(204, 20, 57, 1);
+    border-color: rgba(204, 20, 57, 1);
+
 }
 
 .errorInput:focus {
+    border-color: rgba(204, 20, 57, 1);
+
 }
 
 .error {
     color: rgba(204, 20, 57, 1);
+    position: absolute;
+    top: 180px;
+    left: 0;
 }

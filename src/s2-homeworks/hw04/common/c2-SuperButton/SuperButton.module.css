@@ -1,6 +1,6 @@
 .button {
     width: 130px;
-    padding: 5px 24px ;
+    padding: 5px 24px;
     border-radius: 3px;
     border: none;
     color: white;
@@ -17,14 +17,16 @@
 
 .secondary {
     width: 170px;
-    color:  rgba(0, 102, 204, 1);
-    background-color: inherit
+    border: 1px solid rgba(0, 102, 204, 1);
+    background-color: inherit;
+    color: rgba(0, 102, 204, 1);
+
 
 }
 
 .default {
     background-color: rgba(0, 102, 204, 1);
-    
+
 }
 
 .red {
@@ -34,23 +36,41 @@
 }
 
 .default:hover {
+    width: 167px;
+    background-color: rgba(0, 128, 255, 1);
+
 }
 
 .red:hover {
+    width: 167px;
+    background-color: rgba(255, 26, 71, 1);
+
 }
 
 .secondary:hover {
+    background-color: rgba(229, 240, 250, 1);
+    width: 167px;
+
 }
 
 
 .default:active {
+    background-color: rgba(0, 89, 178, 1);
+    width: 149px;
 }
 
 .secondary:active {
+    background-color: rgba(201, 229, 255, 1);
+    width: 149px;
 }
 
 .red:active {
+    background-color: rgba(178, 18, 50, 1);
+    width: 149px;
+
 }
 
 .button:disabled {
+    background: rgba(0, 77, 153, 1);
+
 }

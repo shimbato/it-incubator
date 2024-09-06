@@ -1,23 +1,15 @@
 .sidebar {
     width: 300px;
     background-color: white;
-    position: fixed;
+    position: absolute;
     z-index: 1000;
     height: 100%;
     transition: 0.2s ease-in;
-
-
-
+    left: -300px;
 }
 
 .sidebar.open {
-    /* visibility: hidden; */
-    /* position: fixed;
-    transition: 0.2s ease-out; */
     left: 0;
-    /* box-shadow: 0 10px 40px rgba(29, 33, 38, 0.13),
-        0 1px 2px rgba(29, 33, 38, 0.1); */
-    /* transform: rotate(45deg); */
 
 }
 
@@ -27,7 +19,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent */
+    background: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent */
     z-index: 999;
 }
 
@@ -58,10 +51,10 @@
 
 
 .close {
-    position: fixed;
+    position: absolute;
     left: 250px;
     top: 15px;
-  
+
 
     background-color: transparent;
     border: none;

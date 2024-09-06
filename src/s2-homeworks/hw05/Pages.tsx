@@ -18,7 +18,7 @@ function Pages() {
       <Routes>
         {/*роутинг будут писать студенты*/}
         {/*в начале мы попадаем на страницу '/' и переходим сразу на страницу /pre-junior*/}
-        <Route path={'/'} element={<Navigate to={PATH.PRE_JUNIOR} replace />} />
+        <Route path="/" element={<PreJunior />} />
 
         {/*роуты для /pre-junior, /junior, /junior-plus*/}
         <Route path={PATH.PRE_JUNIOR} element={<PreJunior />} />
@@ -27,6 +27,8 @@ function Pages() {
 
         {/*роут для несуществующей страницы должен отрисовать <Error404 />*/}
         <Route path="*" element={<Error404 />} />
+
+        {/* Redirect from the root path to /pre-junior */}
       </Routes>
     </div>
   );

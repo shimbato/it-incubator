@@ -14,16 +14,14 @@ import s from './HW6.module.css';
 const HW6 = () => {
   const [value, setValue] = useState<string>('');
 
-
   const save = () => {
     saveState<string>('hw6-editable-span-value', value);
     console.log('save :>> ', value);
   };
   const restore = () => {
     // делают студенты
-    restoreState<string>('hw6-editable-span-value', value);
-    console.log('restore :>> ', restoreState);
-   
+    const restoreValue = restoreState<string>('hw6-editable-span-value', value);
+    setValue(restoreValue);
   };
 
   return (

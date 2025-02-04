@@ -5,19 +5,35 @@
 }
 
 .users {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px;
+   
 }
 
 .buttonsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
 }
 
 .container {
+    width: 600px;
 }
 
 .thead {
+    background-color: rgba(229, 229, 229, 1);
+    font-weight: 600;
 }
 
 .nameCol {
+
 }
 
 .ageCol {
+}
+td{
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+
 }
